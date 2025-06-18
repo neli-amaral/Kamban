@@ -1,8 +1,26 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+
     <!-- Base application theme. -->
     <style name="Base.Theme.Task" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/color_default</item>
+        <item name="colorPrimaryVariant">@color/color_default</item>
         <item name="android:windowBackground">@color/material_dynamic_primary80</item> -->
     </style>
+
+
+
+    <style name="ButtonShape" parent="ShapeAppearance.Material3.Corner.Small">
+        <item name="cornerSize">5dp</item>
+    </style>
+
+    <style name="buttonTheme" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/white</item>
+        <item name="shapeAppearance">@style/ButtonShape</item>
+        <item name="android:textColor">@color/color_default</item>
+    </style>
+
+
+
 
     <style name="Theme.Task" parent="Base.Theme.Task" />
 </resources>

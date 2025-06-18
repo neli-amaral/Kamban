@@ -18,12 +18,14 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="E-mail"
             android:textColor="@color/white"/>
 
         <EditText
+            android:id="@+id/editText1"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:hint="Digite seu e-mail"
@@ -33,6 +35,7 @@
             android:background="@drawable/bg_edit_text"/>
 
         <TextView
+            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Senha"
@@ -40,6 +43,7 @@
             android:layout_marginTop="16dp"/>
 
         <EditText
+            android:id="@+id/editText2"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:inputType="textPassword"
@@ -49,6 +53,7 @@
             android:background="@drawable/bg_edit_text"/>
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"
@@ -59,12 +64,14 @@
             />
 
         <LinearLayout
+            android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="4dp">
 
             <TextView
+                android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Criar Conta"
@@ -73,6 +80,7 @@
                 android:textColor="@color/white"/>
 
             <TextView
+                android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Recuperar Conta"
@@ -83,6 +91,7 @@
         </LinearLayout>
 
         <ProgressBar
+            android:id="@+id/progressBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:indeterminateTint="@color/white"
