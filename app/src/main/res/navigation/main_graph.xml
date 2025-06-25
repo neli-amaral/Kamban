@@ -8,6 +8,36 @@
     <fragment
         android:id="@+id/splashFragment"
         android:name="com.alex.task.ui.SplashFragment"
-        android:label="fragment_splash"
-        tools:layout="@layout/fragment_splash" />
+        android:label="fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_authentication3"
+            app:destination="@id/authentication"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <navigation android:id="@+id/authentication"
+        app:startDestination="@id/loginFragment">
+        <fragment
+            android:id="@+id/loginFragment"
+            android:name="com.alex.task.ui.auth.LoginFragment"
+            android:label="fragment_login"
+            tools:layout="@layout/fragment_login">
+            <action
+                android:id="@+id/action_loginFragment_to_registerFragment2"
+                app:destination="@id/registerFragment" />
+            <action
+                android:id="@+id/action_loginFragment_to_recoverAccountFragment"
+                app:destination="@id/recoverAccountFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/recoverAccountFragment"
+            android:name="com.alex.task.ui.auth.RecoverAccountFragment"
+            android:label="fragment_recover_account"
+            tools:layout="@layout/fragment_recover_account" />
+        <fragment
+            android:id="@+id/registerFragment"
+            android:name="com.alex.task.ui.auth.RegisterFragment"
+            android:label="fragment_register"
+            tools:layout="@layout/fragment_register" />
+    </navigation>
 </navigation>
