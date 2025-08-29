@@ -16,6 +16,7 @@
         >
 
         <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:navigationIcon="@drawable/ic_back"
@@ -69,6 +70,7 @@
                 android:padding="10dp" />
 
             <TextView
+                android:id="@+id/textViewSenha"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"

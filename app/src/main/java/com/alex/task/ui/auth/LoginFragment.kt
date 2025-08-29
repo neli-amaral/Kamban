@@ -32,8 +32,9 @@ class LoginFragment : Fragment() {
 
     private fun initListener(){
         binding.btnLogin.setOnClickListener {
-            findNavController().navigate(R.id.action_global_homeFragment)
+            validateData()
         }
+
         binding.btnRegister.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_registerFragment2)
         }
@@ -43,8 +44,8 @@ class LoginFragment : Fragment() {
     }
 
     private fun validateData(){
-        val email = binding.editText1.text.toString().trim()
-        val senha = binding.editText1.text.toString().trim()
+        val email = binding.editTextEmail.text.toString().trim()
+        val senha = binding.editTextSenha.text.toString().trim()
         if(email.isNotBlank()){
             if(senha.isNotBlank()){
                 findNavController().navigate(R.id.action_global_homeFragment)
